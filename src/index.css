@@ -21,14 +21,14 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-block: 61px;
-	width: 50%;
+	padding-block: 66px;
+	width: 30%;
 	background-color: rgb(244 45 45 / 89%);
 	border-radius: 10px;
 	font-weight: bolder;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	margin: 0px auto;
-	height: 15em;
+	height: 7em;
 	box-shadow: 1px 1px 20px 6px black;
 }
 
@@ -38,18 +38,18 @@ form {
 }
 
 .blog {
-	max-width: 60%;
-	background-color: rgb(192, 237, 236);
-	color: black;
-	font-weight: lighter;
-	border: 1px black solid;
-	margin: 0px auto;
-	margin-bottom: 10px;
-	border-radius: 4px;
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	background-color: #d8cbff63;
+	width: 51%;
+	margin: 0 auto;
+	padding: 10px;
+	/* padding-top: 6px; */
+	padding-left: -1px;
+	text-align: -webkit-center;
+	/* height: 0em; */
+	/* border: 2px solid black; */
 	display: block;
-	padding-left: 10px;
-	max-width: 60%;
+	box-shadow: 1px 1px 12px black;
+	border-radius: 10px;
 }
 
 /* .input {
@@ -69,8 +69,7 @@ form {
 .input {
 	width: 90%;
 	padding: 6px;
-
-	height: 45px;
+	height: 29px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	box-sizing: border-box;
@@ -78,11 +77,11 @@ form {
 }
 
 .content {
-	height: 100px;
+	height: 55px;
 }
 
 label {
-	font-size: x-large;
+	font-size: large;
 	display: block;
 	padding: 10px;
 	text-align: center;
@@ -100,7 +99,7 @@ h2 {
 h1 {
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	text-align: center;
-	margin-top: 65px;
+	margin-top: 15px;
 }
 
 .btn {
@@ -110,10 +109,13 @@ h1 {
 	background-color: rgb(0 255 3);
 	color: white;
 	border-style: none;
-	width: 94px;
-	height: 30px;
+	width: 67px;
+	height: 31px;
 	font-size: 15px;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btn:hover {
+	box-shadow: 1px 1px 12px black;
 }
 
 .remove {
@@ -127,17 +129,18 @@ h1 {
 }
 
 .Blog {
-	background-color: #d8cbff;
-	width: 70%;
+	background-color: #d8cbff7d;
+	width: 45%;
 	margin: 0 auto;
-	padding-top: 12px;
-	padding-left: 10px;
+	/* padding-top: 12px; */
+	/* padding-left: 10px; */
 	text-align: center;
-	height: 6rem;
+	/* height: 6rem; */
 	border: 2px solid black;
-	display: table;
-
+	/* display: table; */
+	border: none;
 	border-radius: 10px;
+	box-shadow: 1px 1px 14px black;
 }
 
 /* 
@@ -151,18 +154,26 @@ h1 {
 	font-family: sans-serif;
 	font-size: x-large;
 	margin: 0 auto;
+	font-variant: all-petite-caps;
 }
 
 .del {
 	text-align: end;
-	margin: auto;
+	margin: -14px 3px 0px 0px;
+	padding: 3px;
 }
 
 #del-col {
 	background-color: red;
 	color: #d8cbff;
-	width: 60px;
-	border-radius: 10%;
+	/* width: 32px; */
+	border: none;
+	border-radius: 18px;
+}
+.Blog > p {
+	font-size: larger;
+	font-family: inherit;
+	margin-block: 0px;
 }
 
 /* Created with https://www.css-gradient.com */
@@ -193,15 +204,38 @@ a{
 
 @media screen and (max-width: 900px) {
 	.section {
-		height: 22vh;
-		width: 100%;
-		padding-block: 60px;
+		height: 8vh;
+		width: 90%;
+		padding-block: 62px;
 	}
 
 	.input {
-		height: 32px;
+		height: 24px;
 	}
 	.content {
-		height: 94px;
+		height: 40px;
+	}
+	h1 {
+		margin-top: 28px;
+	}
+
+	.Blog {
+		width: 100%;
+	}
+	label {
+		font-size: medium;
+		padding: 6px;
+	}
+	.btn {
+		/* border-radius: 5px; */
+		/* position: relative; */
+		/* left: 45%; */
+		/* background-color: rgb(0 255 3); */
+		/* color: white; */
+		/* border-style: none; */
+		/* width: 67px; */
+		height: 25px;
+		/* font-size: 15px; */
+		/* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 	}
 }
